@@ -140,10 +140,6 @@
             <version>9.1.5</version>
         </dependency>
         <dependency>
-            <groupId>org.xhtmlrenderer</groupId>
-            <artifactId>flying-saucer-pdf-itext5</artifactId>
-        </dependency>
-        <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
             <version>5.7.4</version>
