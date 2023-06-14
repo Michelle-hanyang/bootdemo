@@ -12,7 +12,7 @@ spring:
     static-locations: classpath:/resources,classpath:/static
   datasource:
     mam:
-      jdbc-url: jdbc:mysql://localhost:3306/municipal-administration-manage?useUnicode=true&autoReconnect=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+      jdbc-url: jdbc:mysql://localhost:3306/springboot?useUnicode=true&autoReconnect=true&characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
       username: root
       password: yang0106052509
       driver-class-name: com.mysql.jdbc.Driver
@@ -35,6 +35,17 @@ spring:
       password: Hljltchanhu@#23
       driver-class-name: com.mysql.jdbc.Driver
       type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    database-platform: org.hibernate.spatial.dialect.mysql.MySQL8SpatialDialect
+    hibernate:
+      ddl-auto: none
+    show-sql: true
+    open-in-view: false
+      properties:
+        hibernate:
+          format_sql: true                  # 格式化SQL
+          use_sql_comments: false           # 显示JPQL语句
+          generate_statistics: false        # 显示SQL性能分析日志
   redis:
     database: 4
     host: 10.64.9.33
